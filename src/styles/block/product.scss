@@ -1,0 +1,38 @@
+h3 {
+  margin: 0;
+}
+
+.product {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+
+  &__photo {
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 140%;
+  }
+
+  &__description {
+    margin-top: 8px;
+    margin-bottom: 12px;
+
+    @include on-tablet {
+      margin-bottom: 34px;
+    }
+
+    @include on-desktop {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__price {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
