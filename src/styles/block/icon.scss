@@ -4,7 +4,7 @@
   width: 24px;
   background-repeat: no-repeat;
   background-size: cover;
-  transition: transform 0.3s;
+  transition: $hover-effect-duration;
   position: relative;
 
   @include hover(transform, scale(1.2));
@@ -22,8 +22,8 @@
       display: block;
       cursor: pointer;
 
-      transition: transform 0.3s;
-      transform: scale(1);
+      @include hover(transform, scale(1));
+
       white-space: nowrap;
       top: -50%;
       left: -450%;
@@ -41,7 +41,8 @@
 
     &:hover {
       background-image: url(/src/images/icon/icon-burger-menu-hover.png);
-      transition: transform 0.3s;
+
+      @include hover(transform, scale(1.2));
     }
   }
 

@@ -6,9 +6,9 @@ html {
   font-family: Manrope, sans-serif;
   font-style: normal;
   color: $main-text-color;
-  font-size: 18px;
+  font-size: $main-page-title-font-size;
   font-weight: 400;
-  line-height: 140%;
+  line-height: $page-title-font-line-height;
 
   scroll-behavior: smooth;
 
@@ -30,5 +30,9 @@ html {
       opacity: 1;
       pointer-events: all;
     }
+  }
+
+  &:has(.page__menu:target) {
+    overflow: hidden;
   }
 }

@@ -9,12 +9,14 @@ h3 {
 
   &__photo {
     width: 100%;
+
+    @include hover(transform, scale(1.2));
   }
 
   &__title {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 140%;
+    font-size: $main-page-title-font-size;
+    font-weight: $title-font-weight;
+    line-height: $page-title-font-line-height;
   }
 
   &__description {
@@ -32,7 +34,7 @@ h3 {
 
   &__price {
     margin: 0;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: $second-font-size;
+    font-weight: $price-font-weight;
   }
 }

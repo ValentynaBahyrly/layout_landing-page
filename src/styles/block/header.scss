@@ -1,13 +1,9 @@
 .header {
-  // display: none !important;
-
   background-image: url(../images/bc/bc.png);
   background-size: cover;
   background-position: center;
 
   &__content {
-    @include content-padding-inline;
-
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -16,16 +12,16 @@
 
   &__title {
     margin: 0;
-    font-weight: 700;
+    font-weight: $title-font-weight;
     font-size: 36px;
     line-height: 100%;
-    color: white;
+    color: $header-title-color;
 
-    @media (min-width: $tablet-min-width) {
+    @include on-tablet {
       font-size: 48px;
     }
 
-    @media (min-width: $desktop-min-width) {
+    @include on-desktop {
       font-size: 56px;
     }
   }

@@ -5,6 +5,7 @@
 
     @include on-tablet {
       justify-items: center;
+      row-gap: 56px;
     }
 
     @include on-desktop {

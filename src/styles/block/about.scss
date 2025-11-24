@@ -1,5 +1,5 @@
 .about-us {
-  background-color: #fcfaef;
+  background-color: $about-us-background-color;
 
   &__photo {
     box-sizing: border-box;
@@ -35,28 +35,15 @@
   }
 
   &__title {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 32px;
     margin: 0;
     overflow-wrap: break-word;
 
-    @include on-tablet {
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 40px;
-    }
-
-    @include on-desktop {
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 48px;
-    }
+    @include title-about-section-font-size;
   }
 
   &__description {
     margin-block: 24px 0;
-    font-size: 16px;
+    font-size: $second-font-size;
     letter-spacing: 0.15px;
 
     @include on-tablet {

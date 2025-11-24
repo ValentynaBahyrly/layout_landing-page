@@ -24,8 +24,28 @@
   }
 }
 
+@mixin title-about-section-font-size {
+  font-weight: $title-font-weight;
+  font-size: 32px;
+  line-height: 32px;
+
+  @include on-tablet {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @include on-desktop {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}
+
+.container {
+  @include content-padding-inline;
+}
+
 @mixin hover($property, $toValue) {
-  transition: #{$property} 0.3s;
+  transition: #{$property} $hover-effect-duration;
   &:hover {
     #{$property}: $toValue;
   }
