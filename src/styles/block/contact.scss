@@ -23,13 +23,24 @@
   box-sizing: border-box;
   width: 100%;
   margin-top: 16px;
-  border-radius: 8px;
-  background-color: $footer-form-background-color;
-  border: none;
+  border-radius: $button-border-radius;
   padding-left: 16px;
-  font-size: $footer-label-form-font-size;
-  letter-spacing: $footer-label-form-letter-spacing;
-  color: $footer-text-form-color;
+  font-size: $label-form-font-size;
+  letter-spacing: $label-form-letter-spacing;
+  background-color: $form-background-color;
+
+  border: none;
+  color: $form-default-text-color;
+
+  &:hover {
+    border: 1px solid $form-hover-border-color;
+    color: $main-text-color;
+  }
+
+  &:focus {
+    border: 2px solid $form-focus-border-color;
+    color: $main-text-color;
+  }
 
   &--name {
     height: 48px;
@@ -45,20 +56,11 @@
   }
 }
 
-.form--button-send {
-  font-weight: 700;
-  font-size: $second-font-size;
-  line-height: 27px;
+.form--button {
   margin: 32px 0 48px;
   padding: 0;
 
-  height: 56px;
-
-  &:hover {
-    background-color: $main-text-color;
-    color: $footer-form-button-hover-color;
-    transition-duration: $hover-effect-duration;
-  }
+  @include button;
 
   @include on-tablet {
     margin-bottom: 80px;
@@ -71,9 +73,9 @@
 
 .address {
   &__label {
-    font-size: $footer-label-form-font-size;
-    letter-spacing: $footer-label-form-letter-spacing;
-    color: $footer-text-label-color;
+    font-size: $label-form-font-size;
+    letter-spacing: $label-form-letter-spacing;
+    color: $address-text-label-color;
     margin-bottom: 8px;
   }
 
@@ -82,11 +84,11 @@
     box-sizing: border-box;
     font-size: $second-font-size;
     text-decoration: none;
-    color: $footer-text-color;
+    color: $address-text-color;
     margin-bottom: 16px;
 
     &:hover {
-      color: $hover-footer-color;
+      color: $form-focus-border-color;
       transition-duration: $hover-effect-duration;
     }
   }

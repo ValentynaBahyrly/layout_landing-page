@@ -40,6 +40,28 @@
   }
 }
 
+@mixin button {
+  height: 56px;
+  width: 100%;
+  border: 0;
+  border-radius: $button-border-radius;
+  background-color: $button-default-background-color;
+
+  font-size: $second-font-size;
+  font-weight: 700;
+  line-height: 27px;
+  color: $button-text-color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-hover-background-color;
+  }
+
+  &:active {
+    background-color: $button-active-background-color;
+  }
+}
+
 .container {
   @include content-padding-inline;
 }

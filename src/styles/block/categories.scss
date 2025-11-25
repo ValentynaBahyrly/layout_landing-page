@@ -36,14 +36,7 @@
     margin: 40px auto 0;
     padding: 0;
 
-    height: 56px;
-    width: 100%;
-    border: 0;
-    border-radius: 8px;
-    background-color: $categories-button-background-color;
-
-    font-size: $second-font-size;
-    color: $categories-button-text-color;
+    @include button;
 
     @include on-tablet {
       margin-top: 56px;
