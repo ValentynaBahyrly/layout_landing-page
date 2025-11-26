@@ -3,18 +3,20 @@
 
   &__photo {
     box-sizing: border-box;
-    background-image: url(/src/images/bc/bc-about-us.png);
+    background-image: url(../images/bc/bc-about-us.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center 15%;
     height: 200px;
 
     @include on-tablet {
       height: 400px;
+      background-position: center 35%;
     }
 
     @include on-desktop {
       height: 460px;
+      background-position: center 65%;
     }
   }
 

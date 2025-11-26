@@ -3,11 +3,11 @@ html {
 }
 
 .page {
-  font-family: Manrope, sans-serif;
-  font-style: normal;
+  font-family: $page-font-family;
+  font-style: $page-font-style;
+  font-weight: $page-font-weight;
   color: $main-text-color;
   font-size: $main-page-title-font-size;
-  font-weight: 400;
   line-height: $page-title-font-line-height;
 
   scroll-behavior: smooth;

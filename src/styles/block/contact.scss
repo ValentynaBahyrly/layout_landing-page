@@ -23,7 +23,9 @@
   box-sizing: border-box;
   width: 100%;
   margin-top: 16px;
-  padding: 12px 14px;
+  padding: 14px 16px;
+  font-family: $page-font-family;
+  font-style: $page-font-style;
   font-size: $label-form-font-size;
   letter-spacing: $label-form-letter-spacing;
   background-color: $form-background-color;
@@ -41,6 +43,7 @@
   }
 
   &:focus-visible {
+    outline: none;
     border-color: $form-focus-border-color;
     color: $main-text-color;
     transition:
