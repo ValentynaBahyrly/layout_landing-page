@@ -4,38 +4,26 @@ h3 {
 
 .product {
   display: block;
-  box-sizing: border-box;
   margin: 0;
 
   &__photo {
     width: 100%;
+    object-fit: cover;
+    object-position: center;
     cursor: pointer;
 
     @include hover(transform, scale(1.05));
-  }
 
-  &__title {
-    font-size: $main-page-title-font-size;
-    font-weight: $title-font-weight;
-    line-height: $page-title-font-line-height;
-  }
+    &--categories {
+      height: 130px;
 
-  &__description {
-    margin-top: 8px;
-    margin-bottom: 12px;
+      @include on-tablet {
+        height: 184px;
+      }
 
-    @include on-tablet {
-      margin-bottom: 34px;
+      @include on-desktop {
+        height: 324px;
+      }
     }
-
-    @include on-desktop {
-      margin-bottom: 12px;
-    }
-  }
-
-  &__price {
-    margin: 0;
-    font-size: $second-font-size;
-    font-weight: $price-font-weight;
   }
 }
